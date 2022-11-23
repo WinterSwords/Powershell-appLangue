@@ -1,4 +1,4 @@
-﻿function Get-Test($dest,$b){
+﻿function PasserTest($dest,$b){
     Write-Host
     while (1){
         $j=0
@@ -53,7 +53,7 @@ do{
     Write-Host "STOP-resultat et arrêt"
     $a = read-host "Entrez votre choix"
     
-    if($a -ne "STOP"){Get-Test "$destination\$($dossier[$a])" $a}
+    if($a -ne "STOP"){PasserTest "$destination\$($dossier[$a])" $a}
 
 }Until ($a -eq "STOP")
 
